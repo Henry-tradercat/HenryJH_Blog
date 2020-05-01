@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+body {
+    height: 100%;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background: #e8ffe8;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    .site-wrap {
+        word-wrap: break-word;
+    }
+
+    .container {
+        max-width: 1280px;
+    }
+    .toolnav {
+        height: 30px;
+        background: #6d8461;
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+    .banner {
+        padding: 70px 0;
+        }
+        .logo {
+            font-size: 60px;
+            text-align: center;
+        }
+        .nav {
+            justify-content: center;
+            padding-bottom: 40px;
+            margin-top: -20px;
+        }
+        .navlist {
+            list-style: none;
+            margin-bottom: 0;
+            padding: 0;
+        }
+        .navlist li{
+            display: inline;
+            padding: 10px;
+        }
+        .navlist li a{
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+
+        }
+
+        .navlist li a:hover{
+            color: #444;
+            text-decoration: none;
+        }
+
+    .left-side {
+        }
+
+        .side-frame {
+            padding: 30px;
+            background-color: #fff;
+            margin-bottom: 40px;
+            text-align: center;
+            box-shadow: 1px 2px 5px 1px #b5b5b5;
+            }
+            .title {
+                background: #88cd86;
+                padding: 14px;     
+                z-index: 1;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin: -30px -30px 25px;
+            }
+            .title span{
+                color: #fff;
+            }
+            .about .avatar{
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .about .flag{
+                width: 20px;
+                height: 20px;
+                margin-bottom: 5px;
+            }
+            .social-media a {
+                color: #444;
+                font-size: 25px;
+            }
+
+    .right-side {
+        }
+
+        .post-frame {
+            padding: 30px;
+            background-color: #fff;
+            margin-bottom: 40px;
+            box-shadow: 1px 2px 5px 1px #b5b5b5;
+            }
+        .c_btn {
+            transition: 0.3s;
+            margin-right: auto;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .article-metadata {
+            display: flex;
+            flex-direction: column;
+        }
+        .article-title{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: 0.5s;
+            padding-bottom: 10px;
+            
+        }
+        .article-title:hover{
+            text-decoration: none;
+            color: #858585;
+        }
+        .article-content {
+            padding: 10px;
+            border-top: 2px solid #444;
+        }
+        .media-body, .media-body img{
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-success {
+            background-color: #6fb96d;
+        }
+        .meta-date {
+            padding:10px;
+        }
+
+table th, table td{
+    text-align: left;
+    padding: 4px 11px;
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+}
+
