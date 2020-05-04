@@ -54,6 +54,10 @@ body {
             display: inline;
             padding: 10px;
         }
+        .navlist li:not(:last-child)::after {
+            content: '|';
+            padding-left: 20px;
+        }
         .navlist li a{
             color: #444;
             text-transform: uppercase;
