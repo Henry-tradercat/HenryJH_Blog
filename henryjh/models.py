@@ -37,3 +37,10 @@ class Post(db.Model):
     def __repr__(self):
         return f"Post('{self.title}', '{self.category_id}', '{self.date_posted}')"
 
+
+class About(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    content = db.Column(db.Text, nullable=False)
+    image_file = db.Column(db.String(20), nullable=False, server_default='default.jpg')
+
